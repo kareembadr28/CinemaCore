@@ -51,14 +51,12 @@ namespace training_EFCore.Services
         public IEnumerable<Ticket> GetAllTickets() =>
             context.Tickets.AsNoTracking();
 
-        // 2. التذاكر مع الشو تايم (Eager Loading)
         public IEnumerable<Ticket> GetTicketsWithShowTime_Eager() =>
             context.Tickets
                    .Include(t => t.ShowTime)
                    .ThenInclude(s => s.Movie)
                    .AsNoTracking();
 
-        // 3. تذكرة واحدة مع الشو تايم (Explicit Loading)
         public Ticket GetTicketWithShowTime_Explicit(int id)
         {
             var ticket = context.Tickets.Find(id);
@@ -68,7 +66,6 @@ namespace training_EFCore.Services
                        .Reference(t => t.ShowTime)
                        .Load();
 
-                // تحميل الفيلم كمان لو حبيت
                 context.Entry(ticket.ShowTime)
                        .Reference(s => s.Movie)
                        .Load();
