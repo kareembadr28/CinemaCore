@@ -2,6 +2,8 @@
 
 A clean training project using **Entity Framework Core** to simulate a cinema ticketing system.
 
+This project models a real-world cinema workflow, including movies, actors, genres, showtimes, and tickets — with full database interaction and business logic separation.
+
 ---
 
 ## 🧱 Project Structure
@@ -15,21 +17,21 @@ A clean training project using **Entity Framework Core** to simulate a cinema ti
 
 ## ✅ Features
 
-- Full CRUD operations for all models
-- Filtering, searching, and aggregation
-- Eager and explicit loading
-- Raw SQL queries
-- Executing stored procedures
+- Full CRUD operations for all models  
+- Filtering, searching, and aggregation  
+- Eager and explicit loading  
+- Raw SQL queries  
+- Executing stored procedures  
 - Organized using service layer pattern
 
 ---
 
 ## 🛠 Technologies
 
-- .NET 8 / C#
-- Entity Framework Core
-- Code-First with Migrations and Seeding
-- Fluent API
+- .NET 8 / C#  
+- Entity Framework Core  
+- Code-First with Migrations and Seeding  
+- Fluent API  
 - Console Application
 
 ---
