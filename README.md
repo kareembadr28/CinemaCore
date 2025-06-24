@@ -30,6 +30,7 @@ This project models a real-world cinema workflow, including movies, actors, genr
 
 - .NET 8 / C#  
 - Entity Framework Core  
+- SQL Server  
 - Code-First with Migrations and Seeding  
 - Fluent API  
 - Console Application
